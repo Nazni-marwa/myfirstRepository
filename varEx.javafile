@@ -1,0 +1,21 @@
+public class varEx {
+    public static void main(String[] args) {
+        int[] nums = {75, 64, 511, 837,56,329,1};
+        int count = 0;
+        int sumOfNums = 0;
+
+        for (int i = 0; i < nums.length; i++){
+            //count all the numbers over 100
+            if (nums[i]>100) {
+                  count++;
+
+            }
+            //add up all the numbers
+            sumOfNums = sumOfNums + nums[i];
+        }
+        System.out.println("number over hundred:"+count);
+        double mean = (double)sumOfNums / nums.length;
+        System.out.println("Mean of the numbers is:" +mean);
+    }
+}
+

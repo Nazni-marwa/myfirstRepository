@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class arrEx {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] predic = new String[3];
+        predic[0] = "you are lucky person";
+        predic[1] = "You are loved by many";
+        predic[2] = "You attract abundance in everything you do";
+        System.out.print("I will predict you future. choose 1, 2 or 3: ");
+        int choice = scanner.nextInt();
+        System.out.println("My predictions for you are: "+ predic[choice - 1]);
+
+    }
+}

@@ -1,0 +1,11 @@
+-	ArrayList<String> sal = new ArrayList<String>();
+sal.add("toaster");
+sal.add("Fridge");
+sal.add("Kettle");
+
+sal.remove(1);
+sal.get(1);
+sal.set(1, "microwave");
+System.out.println(sal);
+System.out.println(sal.size());
+sal.clear();

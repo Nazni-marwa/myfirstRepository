@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class codeEx {
+    public static void main(String[] args) {
+        ThreadLocalRandom.current().nextInt(1, 101);
+        Scanner scanner = new Scanner(System.in);
+        int guess;
+        int randomNumber;
+        System.out.println("__Guessing game__");
+        do {
+            System.out.print("\nguess:");
+            guess = scanner.nextInt();
+            if (guess < randomNumber) {
+                System.out.println("HIGHER");
+            } else if (guess > randomNumber) {
+                System.out.println("LOWER");
+            } else {
+                System.out.println("You guessed right!");
+            } while (guess != randomNumber)  ;
+
+

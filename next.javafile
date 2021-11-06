@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class next {
+    public static void main (String[]args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("what is your name?");
+        String userName = scanner.next();
+        System.out.println(userName + " is a nice name");
+
+        System.out.println("how old are you?");
+        int userAge = scanner.nextInt();
+        System.out.println("Your name is " + userName + " and you are " + userAge + " years old");
+        System.out.println("how tall are you in metres?");
+        double userHeight = scanner.nextDouble();
+        System.out.println("You are " + userHeight + " metres tall" );
+        double averageMaleHeightDifference = userHeight - 1.75;
+        double averageFemaleHeightDifference = userHeight - 1.62;
+        System.out.println("difference between your height and average height is: ");
+        System.out.format(  "%.2f m if you are male\n", averageMaleHeightDifference);
+        System.out.format( " %.2f if you are female", averageFemaleHeightDifference );
+
+        System.out.println("What's your name?");
+        String name = scanner.nextLine();
+        System.out.println("your name is " + name);
+
+
+    }
+}

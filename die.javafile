@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.Scanner;
+
+public class die {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String again;
+        do {
+        int num = ThreadLocalRandom.current().nextInt(1, 7);
+        System.out.println("you rolled a " +num+ ".");
+            System.out.println("roll again? Y/N:");
+                again = scanner.next();
+        } while(again.equals("y"));{
+
+        }
+    }
+}

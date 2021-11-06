@@ -1,0 +1,26 @@
+public class Main {
+
+    public static void main (String[]args){
+        System.out.println("SHOPPING LIST");
+        System.out.println("\t-Milk");
+        System.out.println("\t\t>semi-skimmed");
+        System.out.println("\t\t>Medium");
+        System.out.println("\t-Eggs");
+        System.out.println("\t\t>free-range");
+        System.out.println("\t-Bread");
+        cake();
+        single();
+
+}
+public static void cake(){
+
+        System.out.println("The");
+        System.out.println("\tcake");
+        System.out.println("Is");
+        System.out.println("\tA");
+        System.out.println("Lie");
+}
+public static void single(){
+        System.out.println("SHOPPING LIST\n \t-Milk\n \t\t>Semi-skimmed\n \t\t>Medium\n \t-Egg\n \t\t>free-range\n \t-Bread");
+}
+}

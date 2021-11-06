@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class codeSix2 {
+    public static void main(String[] args) {
+        String[] questions = new String[]{
+                "king cobra venom is cytotoxic",
+                "common cobra venom is more potent than king cobra's",
+                "black cobra are aggressive",
+                "cobras belong to a group of snakes called elapids"};
+        boolean[] answers = {false,
+                             true,
+                             false,
+                             true};
+        boolean[] userAns = new boolean[5];
+        int finalScore = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        for(int i=0; i<4; i++){
+            System.out.println("\nQuestion " + (i+1) + ":" + questions[i] + ". True or False?" );
+            System.out.println("your answer: ");
+            userAns[i] = scanner.nextBoolean();
+
+            if(userAns[i]==answers[i]){
+                System.out.println("Correct!");
+                finalScore++;
+            }
+            else {
+                System.out.println("wrong. it's " + answers[i] + ".");
+        }
+    }
+        System.out.println("your final score is " + finalScore + " out of 4");
+}}
+

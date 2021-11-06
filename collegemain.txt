@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+import static java.lang.System.*;
+
+public class Main  {
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.setName("Sarah woods");
+        student.setDateOfBirth("30/11/1996");
+        student.setStudentHousing(false);
+        student.setCourse(new Course());
+        student.course = new Course();
+        student.course.setTitle("Computer science");
+        student.course.setLevel("Undergraduate");
+        student.course.setStartDate("07/09/2021");
+
+        Course c = student.getCourse();
+        c.setTitle("computer science");
+        c.setLevel("Undergraduate");
+        c.setStartDate("07/09/2021");
+
+        out.println("Name: " + student.getName());
+        out.println("DoB: " + student.getDateOfBirth());
+        out.println("Housing: " + (student.hasStudentHousing() ? "yes" : "no"));
+        out.println("The student" + student.getName() + "is enrolled on the " + student.getCourse().getTitle() + "course due to start on" + student.getCourse().getStartDate);
+
+    }}

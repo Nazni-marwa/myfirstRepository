@@ -1,0 +1,21 @@
+public class codeExFive {
+    public static void main(String[] args) { //void is the return type. void means method return no data
+    int a = 10;
+    int b = a;
+    b = 20;
+    int[] x = {3, 7 , 8, 9};
+    foo(x);
+        System.out.println("a=" +a);
+        System.out.println("b=" +b);
+        System.out.println();
+        for(int i=0; i<x.length; i++){
+            System.out.println("x[" + i + "]=" + x[i]);
+        }
+    }
+    public static int[] foo(int[] c){
+        c[1]=50;
+        return c;
+
+    }
+
+}
